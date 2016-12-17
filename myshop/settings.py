@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
+    'cart',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,6 +53,9 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'myshop.urls'
+
+# This is the key that we are going to use to store the cart in the user session.
+CART_SESSION_ID = 'cart'
 
 TEMPLATES = [
     {
